@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+   
+
+
+  <button id="music-btn">Tap for Music</button>
+  <audio id="myAudio">
+    <source src="Eyedress - Something About You (Lyrics) ft. Dent May (1)-[AudioTrimmer.com]-[AudioTrimmer.com].mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+    <div class="birthdayCard">
+      <div class="cardFront">
+        <h3 class="happy">HAPPY BIRTHDAY LALE</h3>
+        <div class="balloons">
+          <div class="balloon-1"></div>
+          <div class="balloon-2"></div>
+          <div class="balloon-3"></div>
+          <div class="balloon-4"></div>
+        </div>
+      </div>
+      <div class="cardInside">
+        <h3 class="back">HAPPY BIRTHDAY</h3>
+        <p>Dear Lale,</p>
+        <p>
+          Happy born day lale, Prettiest Girl I have ever seen.
+          May Allah grant you success everywhere, may you always be happy,<b> laughing, and smiling. Lale, you are the best. Enjoy your day
+          </b>
+        </p>
+        <p class="name">xxx</p>
+      </div>
+    </div>
+    <script>
+      // JavaScript code to play/pause music on button click
+      var audio = document.getElementById('myAudio');
+      var musicBtn = document.getElementById('music-btn');
+      
+      musicBtn.addEventListener('click', function() {
+        if (audio.paused) {
+          audio.play();
+          musicBtn.textContent = 'Tap to Pause';
+        } else {
+          audio.pause();
+          musicBtn.textContent = 'Tap for Music';
+        }
+      });
+    </script>
+  
+  </body>
+</html>
